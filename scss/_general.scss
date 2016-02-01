@@ -62,7 +62,7 @@ section{
   nav {
     width: $grid-width * 1.80;
     position:absolute;
-    top: 180px;
+    top: 182px;
     right: $grid-width*5;
     list-style-type: none;
     li{
@@ -88,6 +88,7 @@ section{
     width:$content-width;
   }
   h2 {
+    margin-top: 15px;
     font-size: 20px;
     font-weight: bold;
   }
@@ -96,8 +97,9 @@ section{
     margin-bottom: 0;
   }
   .column{
+
     margin-top: 60px;
-    width:543px;
+    width:$grid-width * 5.8;
   }
   .right {
     float:right;
@@ -105,8 +107,12 @@ section{
   .left {
     float:left;
   }
-  img{
+  .image-container{
     height:250px;
+    overflow: hidden;
+    img {
+      width:100%;
+    }
   }
 }
 
