@@ -25,15 +25,15 @@ p{
   width:$content-width;
   margin:auto;
   padding-top:60px;
-  margin-bottom:60px;
-  clear:both;
+  position:relative;
 }
 section{
   width:100%;
-  position:relative;
+
   padding-bottom:60px;
 }
 .first-section {
+  display: table;
   h1{
     font-size: 36px;
     font-weight: normal;
@@ -48,16 +48,22 @@ section{
   .info {
     float:left;
     width: $grid-width*5;
-    margin-right: $grid-width;
   }
-  img{
-    width:$content-width/2;
-    float: left;
+  .img-container {
+    width:$grid-width*6.5;
+    float: right;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    background: url('images/aygo.jpg') no-repeat center;
+
   }
   nav {
     width: $grid-width * 1.80;
     position:absolute;
-    right: ($grid-width * 1.80) + ($grid-width*5);
+    top: 180px;
+    right: $grid-width*5;
     list-style-type: none;
     li{
         color: white;
@@ -81,6 +87,14 @@ section{
     text-align: center;
     width:$content-width;
   }
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  p {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
   .column{
     margin-top: 60px;
     width:543px;
@@ -96,17 +110,6 @@ section{
   }
 }
 
-
-
-.top-margin {
-    margin-top:60px;
-}
-.last {
-  margin-right:0;
-}
-.aygo-img {
-  width: $content-width;
-}
 
 .grey-background {
   background-color: #F4F5F5;
